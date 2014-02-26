@@ -10,7 +10,8 @@ module RolloutUi
     end
 
     def groups
-      rollout.instance_variable_get("@groups").keys
+      # rollout.instance_variable_get("@groups").keys
+      ([:all, :admin, :support, :pro, :starter] + rollout.instance_variable_get("@groups").keys).to_set.to_a
     end
     
     def features
