@@ -4,3 +4,4 @@ source 'http://rubygems.org'
 gemspec
 
 gem 'rollout', github: 'jamesgolick/rollout'
+gem 'rest-client'
