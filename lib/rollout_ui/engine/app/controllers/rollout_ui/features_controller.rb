@@ -27,6 +27,7 @@ module RolloutUi
     end
 
     def report_to_hubot(feature, percentage)
+      puts "" * 80
       hubot_endpoint = "http://strikingly-hubot.herokuapp.com/hubot/rollout"
       RestClient.post(
         hubot_endpoint, 
